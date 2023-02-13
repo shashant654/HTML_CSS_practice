@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+                    
+                 /* Combined selector */
+                 spam,li{
+                    background-color: orange;
+                 }
+               /* inside an element */
+               div ul li{
+                background-color:  blue;
+               }
+                        /* Direct child */
+               div >li{
+                background-color:  red;
+               }
+
+               /* sibling ~ OR +  */
+               .sibling + p{            /*sibling class k just baad wla paragraph green ho jayega  */
+                background-color: green;
+               }
+
+    </style>
+</head>
+<body>
+    <div>welcome to live class</div>
+    <span>span is just like span</span>
+    <p>we all know paragraph</p>
+
+    <ul>
+        <li class="bg-black text-white">item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ul>
+
+    <div>
+        <p>lorem</p>
+        <li>awesome</li>
+        <ul>
+            <li>highlight me <a href="#"></a></li>
+            <li>highlight me</li>
+        </ul>
+    </div>
+    
+    <section>
+        <p>test 1</p>
+        <p class="sibling">test 2</p>  
+        <p>test 3</p>
+        <p>test 4</p>
+        <p>test 5</p>
+    </section>
+</body>
+</html>

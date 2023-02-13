@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: brown;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        div p{
+            color: chartreuse;
+            font-weight: bold;
+        }
+
+
+        div li p{          /* if p is contained by any li which is contained by div*/
+            color: deeppink;
+            font-weight: bold;
+        }
+
+        div > p{      /* if p is right inside div then css will be applied*/ 
+            color: blue;
+        }
+
+        div + p{          /* if p is right after div i.e p is next siblings of div*/ 
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>this is more on selectors</h1>
+    <div class="container">
+  <div class="row">
+    <ul>
+        <li class="item"><p> this this this this this</p> </li>
+        <li class="item"><p> that that  that that that</p></li>
+        <li>this will not get affected</li>
+        <p>this is a para inside ul</p>
+        </ul>
+  <p>this is a paragraph</p>
+  </div>
+  <p>this is a another paragraph</p>
+    </div>
+    <p>this is outermost paragraph</p>
+
+</body>
+</html>

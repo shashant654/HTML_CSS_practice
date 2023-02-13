@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            height: 500px;
+            width: 100%;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            flex-direction: row;
+            /* flex-direction: column-reverse; */
+            /* flex-direction: row-reverse; */
+
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* flex-flow: row-reverse wrap; */
+
+            justify-content: center;
+            justify-content: end;
+            justify-content: left;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            justify-content: space-around;
+            /* justify-content: inherit; */
+
+            /* align-items: center; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+
+
+        }
+
+        .item {
+
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+            border: 2px solid maroon;
+            margin: 10px;
+            padding: 3px;
+        }
+
+        #item-1 {
+            /* flex properties for box-1 */
+            /* order: 2; */
+
+            /* flex-grow: 3;     takes places is derectly propotional  to the value of flex grow  in which -ve number is invalid  */
+
+            flex-shrink: 2;     /*  whenever we have to shrink then that time which box will more shrink whose shrink value is higher */
+
+        }
+
+        #item-2 {
+            /* order: 40;    which comes first whose order higher  */
+            /* flex-grow: 2; */
+
+            flex-basis: 260px;  /*  when flex direction is set to row wise : will control width*/
+                                 /* when flex direction is set to column wise : will control height*/
+        }
+
+        #item-3 {
+            /* order: 1; */
+
+            /* flex:2 2 150px;   here  flex grow=2 shrink=2 basis=150 */
+
+            align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>this is Flexbox tutorial</h2>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div> -->
+        <!-- <div class="item" id="item-5">Fifth Box</div> -->
+        <!-- <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+
+</html>

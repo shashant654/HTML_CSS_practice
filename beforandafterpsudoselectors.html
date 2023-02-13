@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+            color: brown;
+            /* background: url(photo-1508830524289-0adcbe822b40) ;         */  }
+           
+        .navigation{
+                display: flex;
+                font-weight: bold;
+                /* margin: 10px 10px; */
+
+        }
+        li{
+            list-style: none;
+            /* padding: 10px 10px; */
+            padding: 30px 20px;
+
+
+        }
+
+        section{
+            display: flex;
+              flex-direction: column;
+              margin: 30px 100px;
+                  align-items: center;
+                  /* border: 10px solid red; */
+                  width: 1000px;
+                  height: 200px;
+                  text-align:justify;
+                  justify-content: center;
+              
+        }
+        h3{
+            font-size: 2rem;
+        }
+
+        section::before{
+            content: " this is content";
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Service</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+        <section>
+            <h3>Welcome to Coding world</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere mollitia doloremque, ducimus adipisci similique accusamus eveniet ratione nam sint expedita eligendi autem veritatis fugit vero maiores sapiente deleniti iure laudantium?</p>
+        </section>
+    </header>
+    <hr>
+</body>
+</html>

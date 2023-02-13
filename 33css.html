@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+          background-color: azure;
+      }
+
+      .container{
+          border: 2px solid black;
+          background-color: antiquewhite;
+          height: 1000px;
+      }
+        /* css position: absolute,relative,fixed,sticky ,static(by default) */
+        .box {
+            display:inline-block;
+            border: 3px solid red;
+            width: 200px;
+            height: 200px;
+            margin: 2px;
+            background-color: aqua;
+        }
+
+           #box3{
+               /* absloute: relative to position of its first parent and no gap and overlap to its 1st parent */
+               /* relative: gap and normal position  */
+               /* position: relative; */
+               /* position: absolute; */
+               /* position: sticky; */
+               /* top: 34px; */
+               /* left: 134px; */
+
+               position: fixed;
+                   
+               /* position: absolute; */
+               /* top: 50px; */
+               right: 350px;
+               /* bottom: 20px; */
+               /* bottom: 5px; */
+               
+           }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+    <!-- here i have type only div.box#box*4   for 4 box class and id -->
+    <div class="box" id="box1">111</div>
+    <div class="box" id="box2">222</div>
+    <div class="box" id="box3">Chat with us</div>
+    <div class="box" id="box4">444</div>
+           
+</div>
+</body>
+
+</html>

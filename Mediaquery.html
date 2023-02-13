@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            font-size: 60px;
+            background-color: red;
+            color: white;
+            text-align: center;
+            display: none;
+            
+           
+        }
+          @media (max-width :300px)  {
+              #box1{
+                  display: block;
+              }
+          }
+
+          @media (min-width:300px) and (max-width:500px) {
+              #box2{
+                  display: block;
+                  background-color: blue;
+                  color: black;
+              }
+          }
+
+          @media(min-width:500px) and (max-width:800px) {
+              #box3{
+                  display: block;
+                  background-color: chartreuse;
+                  color: black;
+              }
+          }
+
+          @media (min-width:800px) and (max-width:1200px) {
+              #box4{
+                  display: block;
+                  background-color: aqua;
+                  color: brown ;
+              }
+          }
+
+    </style>
+</head>
+<body>
+    <div class="box" id="box1">mai ek iphone hu</div>
+    <div class="box" id="box2">mai ek hero hu</div>
+    <div class="box" id="box3">mai ek actor hu</div>
+    <div class="box" id="box4">mai ek villain hu</div>
+    
+</body>
+</html>
